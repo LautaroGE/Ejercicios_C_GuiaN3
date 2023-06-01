@@ -6,7 +6,7 @@ void main () {
     /**Realizar un programa en C, utilizando estructuras de repetición condicional para resolver cada o de los siguientes problemas:
      Nota: N y K son números naturales, ambas son variables de entrada.
      • Mostrar por pantalla los 10 primeros números naturales. X
-     • Mostrar por pantalla los N primeros números pares.
+     • Mostrar por pantalla los N primeros números pares. X
      • Calcular y mostrar por pantalla la suma de los N primeros múltiplos de K.
      • Mostrar por pantalla los números enteros que se encuentran comprendidos en el intervalo [–K … K] en orden ascendente
        y luego en orden descendente.
@@ -16,15 +16,17 @@ void main () {
 
      int N, K;
 
+    //• Mostrar por pantalla los 10 primeros números naturales. X
 
-    for (int i = 1; i<11; i++) {
+    /*for (int i = 1; i<11; i++) {
 
         printf ("%d, ", i);
 
-     }
+     } */
 
+     //• Mostrar por pantalla los N primeros números pares. X
 
-     printf ("\n\nIngrese N: ");
+     /*printf ("\n\nIngrese N: ");
      fflush(stdin);
      scanf("%d", &N);
 
@@ -38,6 +40,31 @@ void main () {
             contador++;
 
         }
+
+     }*/
+
+
+     //• Calcular y mostrar por pantalla la suma de los N primeros múltiplos de K.
+
+     printf ("Ingrese N: ");
+     fflush(stdin);
+     scanf ("%d", &N);
+
+     printf ("\n\nIngrese K: ");
+     fflush(stdin);
+     scanf ("%d", &K);
+     printf ("\n\n");
+
+
+     int aux, sumador;
+
+     for (int contador = 1; contador <= N; contador++) {
+
+
+        aux = K*contador;
+        sumador = sumador + aux;
+
+        printf ("%d, ", sumador);
 
      }
 
